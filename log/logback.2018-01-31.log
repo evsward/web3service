@@ -1,0 +1,712 @@
+17:41:21.019 web3 [main] INFO  com.web3.scph.Application - Starting Application on liuwenbin-H81M-DS2 with PID 5714 (/home/liuwenbin/work/IdeaProjects/web3service/target/classes started by liuwenbin in /home/liuwenbin/work/IdeaProjects/web3service)
+17:41:21.033 web3 [main] INFO  com.web3.scph.Application - No active profile set, falling back to default profiles: default
+17:41:21.107 web3 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 17:41:21 CST 2018]; root of context hierarchy
+17:41:21.345 web3 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+17:41:22.285 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+17:41:22.296 web3 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:41:22.297 web3 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:41:22.382 web3 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:41:22.382 web3 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1275 ms
+17:41:22.474 web3 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:41:22.476 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:41:22.477 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:41:22.477 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:41:22.477 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:41:22.590 web3 [main] INFO  c.w.s.config.PageHelperConfiguration - ------Register MyBatis PageHelper
+17:41:23.009 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 17:41:21 CST 2018]; root of context hierarchy
+17:41:23.053 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/totalTrans]}" onto public long com.web3.scph.controller.TransactionController.selectTotalTransAmount()
+17:41:23.056 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/blockHeight]}" onto public long com.web3.scph.controller.TransactionController.findLatestBlockNumber()
+17:41:23.057 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectTranList(java.lang.Integer,java.lang.Integer)
+17:41:23.057 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/{account}]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTranList(java.lang.String,java.lang.Integer,java.lang.Integer)
+17:41:23.058 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/token]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTokenTranList(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+17:41:23.058 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/{tranHash}]}" onto public org.web3j.protocol.core.methods.response.EthTransaction com.web3.scph.controller.TransactionController.getTranByHash(java.lang.String)
+17:41:23.060 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:41:23.061 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:41:23.088 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:41:23.088 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:41:23.117 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:41:23.293 web3 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:41:23.306 web3 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+17:41:23.317 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:41:23.326 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:41:23.330 web3 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:41:23.345 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+17:41:23.349 web3 [main] INFO  com.web3.scph.Application - Started Application in 2.641 seconds (JVM running for 3.022)
+17:41:24.003 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38805
+17:41:24.003 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38744
+17:41:24.186 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38805
+17:41:24.188 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+17:41:33.316 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38805
+17:41:33.316 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38805
+17:41:33.316 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+17:41:35.111 web3 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:41:35.112 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:41:35.120 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+17:41:42.115 web3 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 17:41:21 CST 2018]; root of context hierarchy
+17:41:42.117 web3 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:18:21.705 web3 [main] INFO  com.web3.scph.Application - Starting Application on liuwenbin-H81M-DS2 with PID 9618 (/home/liuwenbin/work/IdeaProjects/web3service/target/classes started by liuwenbin in /home/liuwenbin/work/IdeaProjects/web3service)
+18:18:21.706 web3 [main] INFO  com.web3.scph.Application - No active profile set, falling back to default profiles: default
+18:18:21.763 web3 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:18:21 CST 2018]; root of context hierarchy
+18:18:22.103 web3 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+18:18:22.992 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 42133 (http)
+18:18:23.004 web3 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:18:23.005 web3 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+18:18:23.087 web3 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:18:23.087 web3 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1324 ms
+18:18:23.172 web3 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:18:23.175 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:18:23.176 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:18:23.176 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:18:23.176 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:18:23.282 web3 [main] INFO  c.w.s.config.PageHelperConfiguration - ------Register MyBatis PageHelper
+18:18:23.648 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:18:21 CST 2018]; root of context hierarchy
+18:18:23.696 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/totalTrans]}" onto public long com.web3.scph.controller.TransactionController.selectTotalTransAmount()
+18:18:23.699 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/blockHeight]}" onto public long com.web3.scph.controller.TransactionController.findLatestBlockNumber()
+18:18:23.699 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectTranList(java.lang.Integer,java.lang.Integer)
+18:18:23.700 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/{account}]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTranList(java.lang.String,java.lang.Integer,java.lang.Integer)
+18:18:23.700 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/token]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTokenTranList(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+18:18:23.700 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/{tranHash}]}" onto public org.web3j.protocol.core.methods.response.EthTransaction com.web3.scph.controller.TransactionController.getTranByHash(java.lang.String)
+18:18:23.703 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:18:23.703 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:18:23.726 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:18:23.727 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:18:23.753 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:18:23.907 web3 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:18:23.919 web3 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:18:23.929 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-42133"]
+18:18:23.941 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-42133"]
+18:18:23.946 web3 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18:18:23.971 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 42133 (http)
+18:18:23.975 web3 [main] INFO  com.web3.scph.Application - Started Application in 2.549 seconds (JVM running for 2.837)
+18:18:24.477 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38955
+18:18:24.478 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38949
+18:18:24.503 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38955
+18:18:24.506 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:18:33.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38955
+18:18:33.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38955
+18:18:33.929 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:18:43.926 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38955
+18:18:43.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38955
+18:18:43.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:18:53.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38955
+18:18:53.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38955
+18:18:53.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:19:03.926 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38955
+18:19:03.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38955
+18:19:03.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:19:13.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38957
+18:19:13.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38955
+18:19:13.932 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38957
+18:19:13.935 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:19:23.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38957
+18:19:23.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38957
+18:19:23.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:19:33.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38957
+18:19:33.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38957
+18:19:33.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:19:34.561 web3 [http-nio-42133-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:19:34.561 web3 [http-nio-42133-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:19:34.571 web3 [http-nio-42133-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+18:19:43.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38957
+18:19:43.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38957
+18:19:43.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:19:53.927 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38957
+18:19:53.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38957
+18:19:53.928 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:19:59.508 web3 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:18:21 CST 2018]; root of context hierarchy
+18:19:59.509 web3 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:27:02.239 web3 [main] INFO  com.web3.scph.Application - Starting Application on liuwenbin-H81M-DS2 with PID 11029 (/home/liuwenbin/work/IdeaProjects/web3service/target/classes started by liuwenbin in /home/liuwenbin/work/IdeaProjects/web3service)
+18:27:02.242 web3 [main] INFO  com.web3.scph.Application - No active profile set, falling back to default profiles: default
+18:27:02.302 web3 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:27:02 CST 2018]; root of context hierarchy
+18:27:02.609 web3 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+18:27:03.531 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+18:27:03.542 web3 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:27:03.543 web3 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+18:27:03.633 web3 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:27:03.633 web3 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1331 ms
+18:27:03.718 web3 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:27:03.721 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:27:03.722 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:27:03.722 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:27:03.722 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:27:03.800 web3 [main] INFO  c.w.s.config.PageHelperConfiguration - ------Register MyBatis PageHelper
+18:27:04.138 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:27:02 CST 2018]; root of context hierarchy
+18:27:04.180 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/totalTrans]}" onto public long com.web3.scph.controller.TransactionController.selectTotalTransAmount()
+18:27:04.181 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/blockHeight]}" onto public long com.web3.scph.controller.TransactionController.findLatestBlockNumber()
+18:27:04.182 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectTranList(java.lang.Integer,java.lang.Integer)
+18:27:04.182 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/{account}]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTranList(java.lang.String,java.lang.Integer,java.lang.Integer)
+18:27:04.182 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/token]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTokenTranList(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+18:27:04.183 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/{tranHash}]}" onto public org.web3j.protocol.core.methods.response.EthTransaction com.web3.scph.controller.TransactionController.getTranByHash(java.lang.String)
+18:27:04.184 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:27:04.185 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:27:04.203 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:27:04.203 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:27:04.226 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:27:04.380 web3 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:27:04.392 web3 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:27:04.400 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:27:04.410 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:27:04.414 web3 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18:27:04.432 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+18:27:04.436 web3 [main] INFO  com.web3.scph.Application - Started Application in 2.493 seconds (JVM running for 2.786)
+18:27:05.023 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38988
+18:27:05.024 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38987
+18:27:05.024 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38988
+18:27:05.042 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:27:05.056 web3 [pool-1-thread-1] WARN  com.web3.scph.service.Web3Service - 有正在进行中的交易: 0x9baafb320430a58459ddb016af98b3bba7a736b080471e3e84234faa48b1c42e
+18:27:05.056 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 同步正在进行的交易到数据库：0x9baafb320430a58459ddb016af98b3bba7a736b080471e3e84234faa48b1c42e
+18:27:05.056 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - pendingTimeStamp: 1517394425056
+18:27:05.071 web3 [pool-1-thread-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+18:27:05.123 web3 [pool-1-thread-1] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+18:27:05.127 web3 [pool-1-thread-1] WARN  c.web3.scph.scheduled.ScheduledTask - 交易正在进行中：0x9baafb320430a58459ddb016af98b3bba7a736b080471e3e84234faa48b1c42e
+18:27:14.403 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38988
+18:27:14.403 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38988
+18:27:14.403 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:27:14.411 web3 [pool-1-thread-1] WARN  com.web3.scph.service.Web3Service - 有正在进行中的交易: 0x9baafb320430a58459ddb016af98b3bba7a736b080471e3e84234faa48b1c42e
+18:27:14.412 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 同步正在进行的交易到数据库：0x9baafb320430a58459ddb016af98b3bba7a736b080471e3e84234faa48b1c42e
+18:27:14.412 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - pendingTimeStamp: 1517394434412
+18:27:14.420 web3 [pool-1-thread-1] WARN  c.web3.scph.scheduled.ScheduledTask - 交易正在进行中：0x9baafb320430a58459ddb016af98b3bba7a736b080471e3e84234faa48b1c42e
+18:27:19.394 web3 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:27:19.395 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:27:19.404 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+18:27:19.463 web3 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'
+### The error may exist in com/web3/scph/mapper/TransactionMapper.java (best guess)
+### The error may involve com.web3.scph.mapper.TransactionMapper.findSBTokenTransList-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM (SELECT unionColumn FROM ethereum_transactions WHERE from_account = ? AND to_account = ? UNION ALL SELECT unionColumn FROM pending_transactions WHERE from_account = ? AND to_account = ?) AS utable
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy81.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.github.pagehelper.SqlUtil.doProcessPage(SqlUtil.java:478)
+	at com.github.pagehelper.SqlUtil._processPage(SqlUtil.java:407)
+	at com.github.pagehelper.SqlUtil.processPage(SqlUtil.java:374)
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:255)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy79.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy69.findSBTokenTransList(Unknown Source)
+	at com.web3.scph.service.Web3Service.findSBTokenTransList(Web3Service.java:71)
+	at com.web3.scph.controller.TransactionController.selectSBTokenTranList(TransactionController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+18:27:21.441 web3 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'
+### The error may exist in com/web3/scph/mapper/TransactionMapper.java (best guess)
+### The error may involve com.web3.scph.mapper.TransactionMapper.findSBTokenTransList-Inline
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM (SELECT unionColumn FROM ethereum_transactions WHERE from_account = ? AND to_account = ? UNION ALL SELECT unionColumn FROM pending_transactions WHERE from_account = ? AND to_account = ?) AS utable
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'unionColumn' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy81.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.github.pagehelper.SqlUtil.doProcessPage(SqlUtil.java:478)
+	at com.github.pagehelper.SqlUtil._processPage(SqlUtil.java:407)
+	at com.github.pagehelper.SqlUtil.processPage(SqlUtil.java:374)
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:255)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy79.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy69.findSBTokenTransList(Unknown Source)
+	at com.web3.scph.service.Web3Service.findSBTokenTransList(Web3Service.java:71)
+	at com.web3.scph.controller.TransactionController.selectSBTokenTranList(TransactionController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+18:27:24.400 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38990
+18:27:24.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38988
+18:27:24.405 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前区块交易数量：1
+18:27:24.409 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38990
+18:27:24.412 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:27:34.400 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38992
+18:27:34.400 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38990
+18:27:34.404 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38992
+18:27:34.407 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:27:44.402 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38992
+18:27:44.403 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38992
+18:27:44.403 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:27:54.399 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38993
+18:27:54.399 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38992
+18:27:54.399 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38993
+18:27:54.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:28:04.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38995
+18:28:04.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38993
+18:28:04.405 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38995
+18:28:04.408 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:28:04.414 web3 [pool-1-thread-1] WARN  com.web3.scph.service.Web3Service - 有正在进行中的交易: 0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:04.414 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 同步正在进行的交易到数据库：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:04.414 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - pendingTimeStamp: 1517394484414
+18:28:04.421 web3 [pool-1-thread-1] WARN  c.web3.scph.scheduled.ScheduledTask - 交易正在进行中：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:14.400 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38995
+18:28:14.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38995
+18:28:14.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:28:14.415 web3 [pool-1-thread-1] WARN  com.web3.scph.service.Web3Service - 有正在进行中的交易: 0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:14.415 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 同步正在进行的交易到数据库：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:14.415 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - pendingTimeStamp: 1517394494415
+18:28:14.421 web3 [pool-1-thread-1] WARN  c.web3.scph.scheduled.ScheduledTask - 交易正在进行中：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:24.400 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38995
+18:28:24.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38995
+18:28:24.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:28:24.410 web3 [pool-1-thread-1] WARN  com.web3.scph.service.Web3Service - 有正在进行中的交易: 0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:24.410 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 同步正在进行的交易到数据库：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:24.410 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - pendingTimeStamp: 1517394504410
+18:28:24.417 web3 [pool-1-thread-1] WARN  c.web3.scph.scheduled.ScheduledTask - 交易正在进行中：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:34.400 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38995
+18:28:34.400 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38995
+18:28:34.401 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:28:34.407 web3 [pool-1-thread-1] WARN  com.web3.scph.service.Web3Service - 有正在进行中的交易: 0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:34.407 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 同步正在进行的交易到数据库：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:34.407 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - pendingTimeStamp: 1517394514407
+18:28:34.412 web3 [pool-1-thread-1] WARN  c.web3.scph.scheduled.ScheduledTask - 交易正在进行中：0xb91d8d471c900c1a60a4e1836b72ddded6a80357c17519b9cfc2cf03da079c87
+18:28:43.418 web3 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:27:02 CST 2018]; root of context hierarchy
+18:28:43.419 web3 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:28:46.189 web3 [main] INFO  com.web3.scph.Application - Starting Application on liuwenbin-H81M-DS2 with PID 11312 (/home/liuwenbin/work/IdeaProjects/web3service/target/classes started by liuwenbin in /home/liuwenbin/work/IdeaProjects/web3service)
+18:28:46.191 web3 [main] INFO  com.web3.scph.Application - No active profile set, falling back to default profiles: default
+18:28:46.239 web3 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:28:46 CST 2018]; root of context hierarchy
+18:28:46.599 web3 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+18:28:47.453 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+18:28:47.463 web3 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:28:47.464 web3 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+18:28:47.555 web3 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:28:47.555 web3 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1316 ms
+18:28:47.652 web3 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:28:47.655 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:28:47.656 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:28:47.657 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:28:47.657 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:28:47.739 web3 [main] INFO  c.w.s.config.PageHelperConfiguration - ------Register MyBatis PageHelper
+18:28:48.136 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:28:46 CST 2018]; root of context hierarchy
+18:28:48.183 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectTranList(java.lang.Integer,java.lang.Integer)
+18:28:48.185 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/{account}]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTranList(java.lang.String,java.lang.Integer,java.lang.Integer)
+18:28:48.185 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/token]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTokenTranList(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+18:28:48.186 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/{tranHash}]}" onto public org.web3j.protocol.core.methods.response.EthTransaction com.web3.scph.controller.TransactionController.getTranByHash(java.lang.String)
+18:28:48.186 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/totalTrans]}" onto public long com.web3.scph.controller.TransactionController.selectTotalTransAmount()
+18:28:48.186 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/blockHeight]}" onto public long com.web3.scph.controller.TransactionController.findLatestBlockNumber()
+18:28:48.188 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:28:48.188 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:28:48.219 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:28:48.219 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:28:48.247 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:28:48.406 web3 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:28:48.420 web3 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:28:48.429 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:28:48.451 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:28:48.457 web3 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18:28:48.473 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+18:28:48.477 web3 [main] INFO  com.web3.scph.Application - Started Application in 2.556 seconds (JVM running for 2.882)
+18:28:48.992 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38996
+18:28:48.992 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38996
+18:28:48.992 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:28:50.854 web3 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:28:50.854 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:28:50.862 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+18:28:50.910 web3 [http-nio-8080-exec-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+18:28:50.948 web3 [http-nio-8080-exec-1] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+18:28:50.954 web3 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECTid,block_number,block_hash,transaction_hash,block_timestamp,from_account,' at line 1
+### The error may exist in com/web3/scph/mapper/TransactionMapper.java (best guess)
+### The error may involve com.web3.scph.mapper.TransactionMapper.findSBTokenTransList-Inline
+### The error occurred while setting parameters
+### SQL: select count(0) from (SELECTid,block_number,block_hash,transaction_hash,block_timestamp,from_account,to_account,tran_value,tran_gas_price,tran_gas_amount,tran_nonceFROM (SELECTid,block_number,block_hash,transaction_hash,block_timestamp,from_account,to_account,tran_value,tran_gas_price,tran_gas_amount,tran_nonceFROM ethereum_transactions where from_account=? and to_account=? UNION ALL SELECTid,block_number,block_hash,transaction_hash,block_timestamp,from_account,to_account,tran_value,tran_gas_price,tran_gas_amount,tran_nonceFROM pending_transactions where from_account=? and to_account=? order by block_timestamp desc) as utable) tmp_count
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECTid,block_number,block_hash,transaction_hash,block_timestamp,from_account,' at line 1
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECTid,block_number,block_hash,transaction_hash,block_timestamp,from_account,' at line 1] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECTid,block_number,block_hash,transaction_hash,block_timestamp,from_account,' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy81.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.github.pagehelper.SqlUtil.doProcessPage(SqlUtil.java:478)
+	at com.github.pagehelper.SqlUtil._processPage(SqlUtil.java:407)
+	at com.github.pagehelper.SqlUtil.processPage(SqlUtil.java:374)
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:255)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy79.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy69.findSBTokenTransList(Unknown Source)
+	at com.web3.scph.service.Web3Service.findSBTokenTransList(Web3Service.java:71)
+	at com.web3.scph.controller.TransactionController.selectSBTokenTranList(TransactionController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+18:28:58.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38996
+18:28:58.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38996
+18:28:58.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:29:08.427 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38996
+18:29:08.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38996
+18:29:08.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:29:18.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38996
+18:29:18.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38996
+18:29:18.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:29:28.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38996
+18:29:28.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38996
+18:29:28.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:29:38.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38997
+18:29:38.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38996
+18:29:38.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38997
+18:29:38.433 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:29:48.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38998
+18:29:48.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38997
+18:29:48.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块38998
+18:29:48.432 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:29:58.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38998
+18:29:58.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38998
+18:29:58.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:30:08.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：38998
+18:30:08.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38998
+18:30:08.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:30:18.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39000
+18:30:18.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38998
+18:30:18.433 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块39000
+18:30:18.436 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:30:28.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39001
+18:30:28.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39000
+18:30:28.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块39001
+18:30:28.432 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:30:38.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:30:38.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39001
+18:30:38.429 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块39002
+18:30:38.433 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:30:48.427 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:30:48.427 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39002
+18:30:48.428 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:30:51.040 web3 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:28:46 CST 2018]; root of context hierarchy
+18:30:51.042 web3 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:30:53.393 web3 [main] INFO  com.web3.scph.Application - Starting Application on liuwenbin-H81M-DS2 with PID 11479 (/home/liuwenbin/work/IdeaProjects/web3service/target/classes started by liuwenbin in /home/liuwenbin/work/IdeaProjects/web3service)
+18:30:53.395 web3 [main] INFO  com.web3.scph.Application - No active profile set, falling back to default profiles: default
+18:30:53.466 web3 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:30:53 CST 2018]; root of context hierarchy
+18:30:53.789 web3 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+18:30:54.631 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+18:30:54.644 web3 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:30:54.645 web3 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+18:30:54.723 web3 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:30:54.723 web3 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1257 ms
+18:30:54.810 web3 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:30:54.812 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:30:54.813 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:30:54.813 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:30:54.813 web3 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:30:54.913 web3 [main] INFO  c.w.s.config.PageHelperConfiguration - ------Register MyBatis PageHelper
+18:30:55.315 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:30:53 CST 2018]; root of context hierarchy
+18:30:55.362 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/totalTrans]}" onto public long com.web3.scph.controller.TransactionController.selectTotalTransAmount()
+18:30:55.364 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/blockHeight]}" onto public long com.web3.scph.controller.TransactionController.findLatestBlockNumber()
+18:30:55.364 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectTranList(java.lang.Integer,java.lang.Integer)
+18:30:55.365 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/{account}]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTranList(java.lang.String,java.lang.Integer,java.lang.Integer)
+18:30:55.365 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/trans/token]}" onto public com.web3.scph.vo.TranListResponse com.web3.scph.controller.TransactionController.selectSBTokenTranList(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+18:30:55.366 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web3/{tranHash}]}" onto public org.web3j.protocol.core.methods.response.EthTransaction com.web3.scph.controller.TransactionController.getTranByHash(java.lang.String)
+18:30:55.368 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:30:55.368 web3 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:30:55.395 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:30:55.395 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:30:55.423 web3 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:30:55.598 web3 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:30:55.610 web3 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:30:55.621 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:30:55.634 web3 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:30:55.640 web3 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18:30:55.652 web3 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+18:30:55.656 web3 [main] INFO  com.web3.scph.Application - Started Application in 2.541 seconds (JVM running for 2.836)
+18:30:56.159 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:30:56.159 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：38996
+18:30:56.184 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 批量同步最后一个区块39002
+18:30:56.187 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:30:58.971 web3 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:30:58.971 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:30:58.981 web3 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+18:31:05.620 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:31:05.621 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39002
+18:31:05.621 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:31:15.618 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:31:15.618 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39002
+18:31:15.618 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:31:25.619 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:31:25.620 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39002
+18:31:25.620 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:31:35.619 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:31:35.619 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39002
+18:31:35.619 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:31:45.618 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:31:45.618 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39002
+18:31:45.618 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:31:55.619 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 当前最高区块：39002
+18:31:55.619 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 最高同步区块：39002
+18:31:55.619 web3 [pool-1-thread-1] INFO  c.web3.scph.scheduled.ScheduledTask - 区块同步完毕，共耗时：0s
+18:32:05.390 web3 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fc229ab: startup date [Wed Jan 31 18:30:53 CST 2018]; root of context hierarchy
+18:32:05.391 web3 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
